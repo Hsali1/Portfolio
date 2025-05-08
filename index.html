@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hassan - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+    <header>
+        <h1>Hassan Ali</h1>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+
+                <div class="project">
+                    <div class="project-image">
+                        <img src="images/RPG.png" alt="RPG Game Screenshot" />
+                        <div class="project-overlay">
+                            <h3>RPG Game</h3>
+                            <p>A classic console RPG game built using C++. Includes combat mechanics, leveling system
+                                and more</p>
+                            <a href="https://github.com/Hsali1/RPG-Game" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">
+                        <img src="images/Tic2.png" alt="Tic Tac Toe Screenshot" />
+                        <div class="project-overlay">
+                            <h3>Tic Tac Toe</h3>
+                            <p>Command-line Tic Tac Toe with AI opponent using the Minimax algorithm. C++ implementation
+                                with optimal play. Uses command line commands to color the terminal to make the game
+                                look more exciting</p>
+                            <a href="https://github.com/Hsali1/AI-TicTacToe" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">
+                        <img src="images/Socialmedia.png" alt="Social Media Analyzer" />
+                        <div class="project-overlay">
+                            <h3>Social Media Analyzer</h3>
+                            <p>Java-based social media moderation tool using Maven, Redis, and sentiment analysis for
+                                automated flagging.</p>
+                            <a href="https://github.com/Hsali1/ECS160-Hw1" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-image">
+                        <img src="images/PasswordManager2.png" alt="Password Manager Screenshot" />
+                        <div class="project-overlay">
+                            <h3>Password Manager</h3>
+                            <p>Lightweight CLI password manager written in C with encryption, storage, and search
+                                capabilities. Beginner-friendly.</p>
+                            <a href="https://github.com/Hsali1/Password-Manager" target="_blank">GitHub Link</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an aspiring Software Engineer with a focus on system programming, C/C++, and backend development.
+                I am persuing my bachelors in Computer Science from UC Davis and will graduate in June 2025.
+                I enjoy building tools and games from scratch and am currently trying to build as many projects as I can
+                to get better at programming</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:Hassanalisid1996@gmail.com">Hassanalisid1996@gmail.com</a></p>
+            <div class="contact-links">
+                <a href="https://github.com/Hsali1" target="_blank" class="icon-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/2hassan/" target="_blank" class="icon-link">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hassan Ali</p>
+    </footer>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <script>
+        const btn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        });
+
+        btn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+</body>
+
+</html>
